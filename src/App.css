@@ -1,0 +1,129 @@
+/* App-specific styles */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section base styles */
+section {
+  position: relative;
+  width: 100%;
+}
+
+/* Pinned section styles */
+.pinned-section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Flowing section styles */
+.flowing-section {
+  min-height: auto;
+  padding: 8vh 0;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+}
+
+/* Button hover effect */
+.btn-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.btn-hover:active {
+  transform: scale(0.98);
+}
+
+/* Image card rotation */
+.img-card-left {
+  transform: rotate(2deg);
+}
+
+.img-card-right {
+  transform: rotate(-2deg);
+}
+
+/* Accent line */
+.accent-line {
+  width: 72px;
+  height: 3px;
+  background: #B7FF3A;
+  border-radius: 999px;
+}
+
+/* Tag styles */
+.tech-tag {
+  @apply px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-lg;
+  @apply bg-dark-lighter border border-white/10 text-gray-secondary;
+}
+
+/* Timeline styles */
+.timeline-line {
+  @apply absolute left-0 top-0 w-0.5 bg-white/15;
+}
+
+.timeline-dot {
+  @apply absolute -left-1.5 w-3 h-3 rounded-full bg-lime;
+}
+
+/* Form input styles */
+.form-input {
+  @apply w-full px-4 py-3 bg-dark-light border border-white/10 rounded-xl;
+  @apply text-gray-primary placeholder:text-gray-secondary/50;
+  @apply focus:outline-none focus:border-lime/50 focus:ring-1 focus:ring-lime/30;
+  @apply transition-all duration-200;
+}
+
+/* Responsive typography */
+.heading-xl {
+  font-size: clamp(2.75rem, 5vw, 4.75rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.heading-lg {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.heading-md {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.body-text {
+  font-size: clamp(0.875rem, 1.1vw, 1rem);
+  line-height: 1.65;
+}
+
+.label-text {
+  @apply font-mono text-xs uppercase tracking-widest;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
