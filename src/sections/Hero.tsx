@@ -278,7 +278,7 @@ export default function Hero() {
           style={{ transform: "rotate(-2deg)" }}
         >
           <img
-            src="/dist/hero_portrait.jpg"
+            src="dist/assets/hero_portrait.jpg"
             alt="Mazbha Ul Haque"
             className="w-full h-full object-cover"
           />

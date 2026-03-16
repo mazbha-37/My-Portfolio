@@ -20,7 +20,7 @@ const education = [
     period: "January 2022 – December 2025",
     gpa: "CGPA 3.75 / 4.00",
     accent: "#B7FF3A",
-    transcriptUrl: "/dist/Undergrad_Transcript (1).pdf", // Place your PDF in public/transcripts/
+    transcriptUrl: "dist/assets/Undergrad_Transcript (1).pdf", // Place your PDF in public/transcripts/
   },
   {
     icon: BookOpen,
