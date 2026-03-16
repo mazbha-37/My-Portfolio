@@ -278,7 +278,7 @@ export default function Hero() {
           style={{ transform: "rotate(-2deg)" }}
         >
           <img
-            src="/public/hero_portrait.jpg"
+            src="/hero_portrait.jpg"
             alt="Mazbha Ul Haque"
             className="w-full h-full object-cover"
           />
@@ -289,7 +289,7 @@ export default function Hero() {
         {/* Mobile portrait */}
         <div className="lg:hidden absolute right-6 top-[18vh] w-24 h-32 rounded-xl overflow-hidden">
           <img
-            src="/public/hero_portrait.jpg
+            src="/hero_portrait.jpg"
             alt="Mazbha Ul Haque"
             className="w-full h-full object-cover"
           />
