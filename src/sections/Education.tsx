@@ -7,6 +7,7 @@ import {
   BookMarked,
   Download,
   FileText,
+  Eye,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -20,7 +21,8 @@ const education = [
     period: "January 2022 – December 2025",
     gpa: "CGPA 3.75 / 4.00",
     accent: "#B7FF3A",
-    transcriptUrl: "/public/Undergrad_Transcript (1).pdf", // Place your PDF in public/transcripts/
+    transcriptUrl:
+      "https://drive.google.com/file/d/1HV3DvYOcMvhLZurulDVlI7c40VHUzoPe/view?usp=sharing",
   },
   {
     icon: BookOpen,
@@ -185,7 +187,8 @@ export default function Education() {
                     <div className="pt-3 border-t border-white/5">
                       <a
                         href={item.transcriptUrl}
-                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="group/link inline-flex items-center gap-2.5 font-mono text-xs transition-all duration-300 hover:opacity-80"
                         style={{ color: item.accent }}
                       >
@@ -196,9 +199,9 @@ export default function Education() {
                           <FileText size={12} />
                         </div>
                         <span className="border-b border-transparent group-hover/link:border-current transition-all">
-                          Download Transcript
+                          View Transcript
                         </span>
-                        <Download
+                        <Eye
                           size={12}
                           className="transition-transform duration-300 group-hover/link:translate-y-0.5"
                         />

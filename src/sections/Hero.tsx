@@ -1,7 +1,7 @@
 import { useEffect, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Github, Linkedin, Mail, ArrowDown, Download } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown, Download, Eye } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -224,12 +224,13 @@ export default function Hero() {
             />
           </button>
           <a
-            href="/public/Mazbha Ul Haque.pdf"
-            download
+            href="https://drive.google.com/file/d/1em8tz-VxeUfOpv7CHl2sW9aYrQ2nqNa5/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-3 px-6 py-3 border border-lime text-lime font-heading font-semibold rounded-pill btn-hover hover:bg-lime hover:text-dark transition-colors"
           >
-            <Download size={18} />
-            Download CV
+            <Eye size={18} />
+            View CV
           </a>
         </div>
 

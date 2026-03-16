@@ -206,7 +206,7 @@ export default function Thesis() {
             {/* CTA buttons */}
             <div ref={ctaRef} className="flex flex-wrap items-center gap-3">
               <a
-                href="dist/assets/T2430470_Final_PrintCopy.pdf"
+                href="https://drive.google.com/file/d/16Epo-Tk1rlCa32VT58bfhV3tyTWm8ZF-/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2.5 px-6 py-3 bg-lime text-dark font-heading font-bold text-sm rounded-full transition-all duration-300 hover:scale-[1.03] hover:brightness-110 hover:shadow-[0_0_28px_rgba(183,255,58,0.45)]"
