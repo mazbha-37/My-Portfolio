@@ -224,7 +224,7 @@ export default function Hero() {
             />
           </button>
           <a
-            href="/dist/Mazbha Ul Haque.pdf"
+            href="/public/Mazbha Ul Haque.pdf"
             download
             className="group flex items-center gap-3 px-6 py-3 border border-lime text-lime font-heading font-semibold rounded-pill btn-hover hover:bg-lime hover:text-dark transition-colors"
           >
@@ -278,7 +278,7 @@ export default function Hero() {
           style={{ transform: "rotate(-2deg)" }}
         >
           <img
-            src="dist/assets/hero_portrait.jpg"
+            src="/public/hero_portrait.jpg"
             alt="Mazbha Ul Haque"
             className="w-full h-full object-cover"
           />
@@ -289,7 +289,7 @@ export default function Hero() {
         {/* Mobile portrait */}
         <div className="lg:hidden absolute right-6 top-[18vh] w-24 h-32 rounded-xl overflow-hidden">
           <img
-            src="/dist/hero_portrait.jpg"
+            src="/public/hero_portrait.jpg
             alt="Mazbha Ul Haque"
             className="w-full h-full object-cover"
           />
