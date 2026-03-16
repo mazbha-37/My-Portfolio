@@ -1,7 +1,7 @@
 import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MapPin, Mail, Phone, Wifi, Globe2 } from "lucide-react";
+import { MapPin, Mail, Phone, Globe2 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -96,10 +96,8 @@ export default function About() {
             {/* Section heading */}
             <div ref={headingRef} className="mb-8">
               <h2 className="font-heading heading-lg text-gray-primary leading-tight mb-4">
-                Building Interactive{" "}
-                <span className="text-lime">&amp; Efficient</span>
-                <br />
-                Applications
+                Crafting <span className="text-lime">Interactive</span>
+                <br />& Performance Driven Solutions
               </h2>
               <div className="accent-line" />
             </div>
@@ -123,17 +121,17 @@ export default function About() {
               {quickFacts.map((fact, index) => (
                 <div
                   key={index}
-                  className="fact-item group flex items-start gap-4 p-4 rounded-xl bg-dark-light/50 border border-white/5 hover:border-lime/35 hover:bg-dark-light/80 hover:shadow-[0_0_28px_rgba(183,255,58,0.09)] transition-all duration-300 cursor-default"
+                  className="fact-item flex items-start gap-4 p-4 rounded-xl bg-dark-light/50 border border-white/5 hover:border-lime/20 hover:bg-dark-light/70 transition-all duration-300"
                 >
                   <fact.icon
                     size={18}
-                    className="text-lime mt-0.5 flex-shrink-0 group-hover:scale-125 group-hover:drop-shadow-[0_0_6px_#B7FF3A] transition-all duration-300"
+                    className="text-lime mt-0.5 flex-shrink-0"
                   />
                   <div className="min-w-0">
-                    <span className="label-text text-gray-secondary block mb-1 group-hover:text-lime/70 transition-colors duration-300">
+                    <span className="label-text text-gray-secondary block mb-1">
                       {fact.label}
                     </span>
-                    <span className="body-text text-gray-primary break-all group-hover:text-white transition-colors duration-300">
+                    <span className="body-text text-gray-primary break-all">
                       {fact.value}
                     </span>
                   </div>
