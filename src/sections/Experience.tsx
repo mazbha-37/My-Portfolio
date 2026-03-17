@@ -95,7 +95,7 @@ export default function Experience() {
     <section
       ref={sectionRef}
       id="experience"
-      className="relative w-full min-h-screen bg-dark py-20 lg:py-32 z-10"
+      className="relative w-full bg-dark py-20 lg:py-32 lg:min-h-screen z-10"
     >
       <div className="w-full px-6 lg:px-0">
         <div className="relative flex flex-col lg:flex-row gap-12 lg:gap-0">

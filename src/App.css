@@ -3,6 +3,8 @@
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
+  /* Prevent layout shifts on mobile from scrollbar appearance */
+  overflow-x: hidden;
 }
 
 /* Section base styles */
@@ -87,7 +89,7 @@ section {
 
 /* Responsive typography */
 .heading-xl {
-  font-size: clamp(2.75rem, 5vw, 4.75rem);
+  font-size: clamp(2rem, 5vw, 4.75rem);
   line-height: 1.05;
   font-weight: 700;
 }
