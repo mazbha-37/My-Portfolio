@@ -10,7 +10,7 @@
  
 <br>
  
-<img src="https://raw.githubusercontent.com/mazbha-37/my-portfolio/main/preview.png" alt="Portfolio Preview" width="800"/>
+
  
 > *Building intelligent systems from real-world data.*
  
