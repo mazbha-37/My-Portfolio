@@ -3,11 +3,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   Github,
+  ExternalLink,
   Car,
   PawPrint,
   ScanLine,
   Sparkles,
   Gamepad2,
+  Brain,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -62,6 +64,24 @@ const projects = [
     icon: Gamepad2,
     accent: "#EF4444",
     gradient: "from-red-500/10 to-orange-900/10",
+  },
+  {
+    title: "Synapse",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "MongoDB",
+      "Tailwind",
+      "Google Gemini",
+    ],
+    description:
+      "Full-stack AI-powered data command center featuring customizable drag-and-drop dashboards with 11+ live data widgets (Weather, Crypto, Stocks, NASA APOD), real-time streaming chat via Google Gemini SSE, and secure NextAuth v5 authentication with audit logging.",
+    github: "https://github.com/mazbha-37/synapse",
+    live: "https://synapse-ashy-psi.vercel.app",
+    icon: Brain, // or LayoutDashboard, Cpu, Activity
+    accent: "#818CF8", // Indigo-400 for AI/Tech vibe
+    gradient: "from-indigo-500/10 to-purple-900/10",
   },
 ];
 
@@ -143,11 +163,14 @@ export default function Projects() {
               key={index}
               className="project-card group flex flex-col rounded-2xl border border-white/5 bg-dark-light/20 overflow-hidden transition-all duration-500 hover:-translate-y-2"
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLDivElement).style.borderColor = `${project.accent}35`;
-                (e.currentTarget as HTMLDivElement).style.boxShadow = `0 16px 48px ${project.accent}18, 0 0 0 1px ${project.accent}20`;
+                (e.currentTarget as HTMLDivElement).style.borderColor =
+                  `${project.accent}35`;
+                (e.currentTarget as HTMLDivElement).style.boxShadow =
+                  `0 16px 48px ${project.accent}18, 0 0 0 1px ${project.accent}20`;
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(255,255,255,0.05)";
+                (e.currentTarget as HTMLDivElement).style.borderColor =
+                  "rgba(255,255,255,0.05)";
                 (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
               }}
             >
@@ -227,28 +250,64 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 font-heading font-semibold text-sm w-fit px-4 py-2 rounded-lg border transition-all duration-300 hover:scale-105"
-                  style={{
-                    color: project.accent,
-                    borderColor: `${project.accent}35`,
-                    background: `${project.accent}10`,
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.background = `${project.accent}25`;
-                    (e.currentTarget as HTMLAnchorElement).style.boxShadow = `0 4px 16px ${project.accent}25`;
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.background = `${project.accent}10`;
-                    (e.currentTarget as HTMLAnchorElement).style.boxShadow = "none";
-                  }}
-                >
-                  <Github size={15} />
-                  View on GitHub
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-heading font-semibold text-sm w-fit px-4 py-2 rounded-lg border transition-all duration-300 hover:scale-105"
+                    style={{
+                      color: project.accent,
+                      borderColor: `${project.accent}35`,
+                      background: `${project.accent}10`,
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLAnchorElement).style.background =
+                        `${project.accent}25`;
+                      (e.currentTarget as HTMLAnchorElement).style.boxShadow =
+                        `0 4px 16px ${project.accent}25`;
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLAnchorElement).style.background =
+                        `${project.accent}10`;
+                      (e.currentTarget as HTMLAnchorElement).style.boxShadow =
+                        "none";
+                    }}
+                  >
+                    <Github size={15} />
+                    View on GitHub
+                  </a>
+                  {"live" in project && project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 font-heading font-semibold text-sm w-fit px-4 py-2 rounded-lg border transition-all duration-300 hover:scale-105"
+                      style={{
+                        color: project.accent,
+                        borderColor: `${project.accent}35`,
+                        background: `${project.accent}10`,
+                      }}
+                      onMouseEnter={(e) => {
+                        (
+                          e.currentTarget as HTMLAnchorElement
+                        ).style.background = `${project.accent}25`;
+                        (e.currentTarget as HTMLAnchorElement).style.boxShadow =
+                          `0 4px 16px ${project.accent}25`;
+                      }}
+                      onMouseLeave={(e) => {
+                        (
+                          e.currentTarget as HTMLAnchorElement
+                        ).style.background = `${project.accent}10`;
+                        (e.currentTarget as HTMLAnchorElement).style.boxShadow =
+                          "none";
+                      }}
+                    >
+                      <ExternalLink size={15} />
+                      Live Site
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
