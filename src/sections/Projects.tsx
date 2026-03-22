@@ -10,6 +10,7 @@ import {
   Sparkles,
   Gamepad2,
   Brain,
+  CookingPot,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -82,6 +83,26 @@ const projects = [
     icon: Brain, // or LayoutDashboard, Cpu, Activity
     accent: "#818CF8", // Indigo-400 for AI/Tech vibe
     gradient: "from-indigo-500/10 to-purple-900/10",
+  },
+  {
+    title: "Food Lagbe",
+    tags: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "Socket.IO",
+      "Tailwind CSS",
+      "Stripe",
+      "Leaflet Maps",
+    ],
+    description:
+      "Full-stack MERN food delivery ecosystem featuring real-time GPS tracking with Socket.IO and Leaflet maps, multi-role dashboards for Customers/Restaurants/Riders/Admins, Stripe payment processing with webhook verification, Cloudinary media management, and JWT authentication with refresh tokens.",
+    github: "https://github.com/mazbha-37/FoodLagbe",
+    live: "https://food-lagbe.vercel.app/",
+    icon: CookingPot,
+    accent: "#EF4444",
+    gradient: "from-red-500/10 to-orange-900/10",
   },
 ];
 
