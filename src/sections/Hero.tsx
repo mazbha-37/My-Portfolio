@@ -212,7 +212,7 @@ export default function Hero() {
             />
           </button>
           <a
-            href="https://drive.google.com/file/d/1em8tz-VxeUfOpv7CHl2sW9aYrQ2nqNa5/view?usp=sharing"
+            href="https://drive.google.com/file/d/19BG8_tnt_FQoDIKE1woPEpca-Z0Wu8dA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 px-5 py-2.5 border border-lime text-lime font-heading font-semibold rounded-pill btn-hover hover:bg-lime hover:text-dark transition-colors text-sm"
