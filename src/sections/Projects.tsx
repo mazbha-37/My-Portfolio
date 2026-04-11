@@ -11,6 +11,7 @@ import {
   Gamepad2,
   Brain,
   CookingPot,
+  Microscope,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -83,6 +84,25 @@ const projects = [
     icon: Brain, // or LayoutDashboard, Cpu, Activity
     accent: "#818CF8", // Indigo-400 for AI/Tech vibe
     gradient: "from-indigo-500/10 to-purple-900/10",
+  },
+  {
+    title: "Skin Disease Detection & AI Advisor",
+    tags: [
+      "Python",
+      "YOLOv8s",
+      "FastAPI",
+      "Google Gemini",
+      "Gradio",
+      "SQLite",
+      "Docker",
+    ],
+    description:
+      "AI-powered system that classifies skin conditions from uploaded images across 10 disease classes using YOLOv8s (84.90% test accuracy). Passes results to Google Gemini 2.5 Flash to generate personalised recommendations, next steps, and daily care tips via a FastAPI REST backend with Gradio UI.",
+    github:
+      "https://github.com/mazbha-37/Skin-Disease-Detection-LLM-Advisor-System",
+    icon: Microscope,
+    accent: "#2DD4BF",
+    gradient: "from-teal-500/10 to-cyan-900/10",
   },
   {
     title: "Food Lagbe",
