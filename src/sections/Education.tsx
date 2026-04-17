@@ -28,7 +28,7 @@ const education = [
     type: "College",
     degree: "Higher Secondary Certificate (HSC)",
     institution: "Government Tolaram College",
-    period: "2018 – 2022",
+    period: "2018 – 2020",
     gpa: "GPA 5.00 / 5.00",
     accent: "#60A5FA",
   },
